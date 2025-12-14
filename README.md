@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+#  Mini E-Commerce Store
 
-First, run the development server:
+A modern, responsive **E-Commerce web application** built with **Next.js (App Router)**, **TypeScript**, **Redux Toolkit**, and **Tailwind CSS**.
+It supports product listing, search, filter, sorting, pagination, cart management, and checkout flow.
+
+---
+
+##  Live Demo
+
+ *(Add your deployed URL here)*
+Example: `https://webkul.vercel.app/`
+
+---
+
+##  Features
+
+*  Product listing from Fake Store API
+*  Search products by name
+*  Filter by category
+*  Sort by price, rating, and name
+*  Pagination (8 products per page)
+*  Add to cart / remove from cart
+*  Increase / decrease quantity
+*  Cart badge with item count
+*  Checkout flow (clears cart)
+*  Fully responsive (mobile, tablet, desktop)
+*  Optimized with `useMemo`
+*  Type-safe with TypeScript
+
+---
+
+##  Tech Stack
+
+* **Framework:** Next.js 16.0.7 (App Router)
+* **Language:** TypeScript (TSX)
+* **State Management:** Redux Toolkit
+* **Styling:** Tailwind CSS
+* **Icons:** Lucide React
+* **API:** Fake Store API
+* **Image Optimization:** Next/Image
+
+---
+
+##  Project Structure
+
+```
+app/
+├── products/
+│   ├── page.tsx
+│   └── [id]/page.tsx
+├── cart/page.tsx
+├── store/
+│   ├── index.ts
+│   └── slices/cartSlice.ts
+├── components/
+│   ├── products/ProductCard.tsx
+│   └── ui/
+│       ├── header.tsx
+│       └── ProductCartItem.tsx
+│       └── footer.tsx
+├── types/
+│   └── index.ts
+├── layout.tsx
+├── page.tsx
+└── globals.css
+```
+
+---
+
+##  Installation & Setup
+
+### 1️ Clone the repository
+
+```bash
+git clone https://github.com/your-username/mini-ecommerce.git
+cd mini-ecommerce
+```
+
+### 2️ Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3️ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open 👉 `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  Available Scripts
 
-## Learn More
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛒 Cart Logic (Redux)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Cart items are stored in Redux
+* Quantity updates handled via reducers
+* Cart badge updates automatically
+* Checkout clears the cart
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##  Future Improvements
+
+*  Authentication
+*  Real payment integration
+*  Wishlist
+*  Dark mode
+*  Unit testing
+*  SEO enhancements
+
+---
+
+##  Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a feature branch
+3. Commit changes
+4. Open a Pull Request
+
+---
+
+##  License
+
+This project is licensed under the **MIT License**.
+
+---
+
+##  Author
+
+**Santosh Kumar Pal**
+📧 Email: *[santoshpal1306@gmail.com](mailto:santoshpal1306@gmail.com)*
+🔗 GitHub: [https://github.com/Santosh130602](https://github.com/Santosh130602)
+
+---
+
