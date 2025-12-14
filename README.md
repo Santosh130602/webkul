@@ -8,8 +8,7 @@ It supports product listing, search, filter, sorting, pagination, cart managemen
 
 ##  Live Demo
 
- *(Add your deployed URL here)*
-Example: `https://webkul.vercel.app/`
+`https://webkul.vercel.app/`
 
 ---
 
@@ -73,8 +72,8 @@ app/
 ### 1️ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/mini-ecommerce.git
-cd mini-ecommerce
+git clone https://github.com/Santosh130602/webkul.git
+cd webkul
 ```
 
 ### 2️ Install dependencies
@@ -98,15 +97,15 @@ Open 👉 `http://localhost:3000`
 ##  Available Scripts
 
 ```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
+npm run dev     
+npm run build   
+npm run start   
+npm run lint    
 ```
 
 ---
 
-## 🛒 Cart Logic (Redux)
+##  Cart Logic (Redux)
 
 * Cart items are stored in Redux
 * Quantity updates handled via reducers
