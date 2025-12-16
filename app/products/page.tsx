@@ -10,7 +10,8 @@ const ProductsPage = async () => {
 
   try {
     const res = await fetch("https://fakestoreapi.com/products", {
-      next: { revalidate: 60 },
+    //   next: { revalidate: 60 },
+    cache: "no-store",
     });
 
     if (res.ok) {
