@@ -8,7 +8,7 @@ const ProductsPage = async () => {
   const res = await fetch(
     "https://fakestoreapi.com/products",
     {
-      next: { revalidate: 180 },
+      next: { revalidate: 60 },
     }
   );
 
