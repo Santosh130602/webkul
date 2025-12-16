@@ -1,6 +1,8 @@
+
 import { Suspense } from "react";
 import { Product } from "@/app/types";
 import ProductsClient from "./ProductsUI";
+export const dynamic = "force-dynamic";
 
 export const revalidate = 60;
 
