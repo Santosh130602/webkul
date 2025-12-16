@@ -20,6 +20,8 @@ const ProductsPage = async () => {
     console.error("Products fetch error:", error);
   }
 
+  console.log(products);
+
   return <ProductsClient products={products} />;
 };
 
