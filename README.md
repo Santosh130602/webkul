@@ -6,11 +6,6 @@ It supports product listing, search, filter, sorting, pagination, cart managemen
 
 ---
 
-##  Live Demo
-
-`https://webkul.vercel.app/`
-
----
 
 ##  Features
 
