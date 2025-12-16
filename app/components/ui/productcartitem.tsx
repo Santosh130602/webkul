@@ -33,7 +33,7 @@ const ProductCartItem = ({
     <div className="flex flex-col gap-6 rounded-xl bg-white p-5 sm:p-6 shadow-md hover:shadow-lg transition-shadow">
       <div className="flex flex-col sm:flex-row gap-6">
         <div className="relative w-full sm:w-28 sm:h-28 h-36 bg-gray-100 rounded-xl overflow-hidden">
-          <Image src={image} alt={title} fill sizes="(max-width: 640px) 100vw, 160px" className="object-contain p-4"
+          <Image src={image} alt={title} priority fill sizes="(max-width: 640px) 100vw, 160px" className="object-contain p-4"
           />
         </div>
 

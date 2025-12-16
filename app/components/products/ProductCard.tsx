@@ -27,7 +27,7 @@ export default function ProductCard({
   return (
     <article onClick={() => onClick?.(id)} className="p-4 bg-white  shadow-sm hover:shadow-md transition-shadow cursor-pointer" aria-labelledby={`product-${id}-title`} >
       <div className="w-full aspect-[4/3] bg-gray-100  overflow-hidden mb-4 relative">
-        <Image src={image} alt={title} fill sizes="(max-width: 640px) 100vw, 33vw" style={{ objectFit: "contain" }} />
+        <Image src={image} alt={title} priority fill sizes="(max-width: 640px) 100vw, 33vw" style={{ objectFit: "contain" }} />
       </div>
 
       <header>

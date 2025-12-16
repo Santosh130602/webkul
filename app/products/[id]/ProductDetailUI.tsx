@@ -2,6 +2,7 @@
 
 import { ShoppingCart, Heart, Star, ArrowLeft } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { Product } from "@/app/types";
 import Header from "@/app/components/ui/header";
 import { addToCart } from "@/app/store/slices/cartSlice";
@@ -32,13 +33,16 @@ const ProductDetailClient = ({ product }: Props) => {
       </button>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="bg-gray-100 flex items-center justify-center p-10">
-          <img
+        <div className="bg-gray-100 flex items-center justify-center p-10 relative h-[420px] w-full">
+          <Image
             src={product.image}
             alt={product.title}
-            className="max-h-[420px] object-contain"
+            fill
+            className="object-contain"
+            priority
           />
         </div>
+
 
         <div className="flex flex-col gap-4">
           <span className="text-xs bg-gray-200 px-3 py-1 rounded-full w-fit">

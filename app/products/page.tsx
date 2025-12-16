@@ -1,31 +1,30 @@
-
 import { Suspense } from "react";
-import { Product } from "@/app/types";
 import ProductsClient from "./ProductsUI";
-export const dynamic = "force-dynamic";
+import { Product } from "@/app/types";
 
+export const dynamic = "force-dynamic"; 
 export const revalidate = 60;
 
 const ProductsPage = async () => {
-  const res = await fetch(
-    "https://fakestoreapi.com/products",
-    {
-      next: { revalidate: 60 },
-    }
-  );
+  let products: Product[] = [];
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch products");
+  try {
+    const res = await fetch("https://fakestoreapi.com/products", {
+      next: { revalidate: 60 },
+    });
+
+    if (res.ok) {
+      products = await res.json();
+    }
+  } catch (err) {
+    console.error("Failed to fetch products:", err);
   }
 
-  const products: Product[] = await res.json();
-
   return (
-    <Suspense fallback={<p> Loading...</p>}>
+    <Suspense fallback={<p className="p-6">Loading products...</p>}>
       <ProductsClient products={products} />
-     </Suspense>
+    </Suspense>
   );
 };
 
 export default ProductsPage;
-
